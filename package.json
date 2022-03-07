@@ -1,0 +1,20 @@
+{
+  "name": "fire-doc",
+  "version": "1.0.0",
+  "description": "Firebase schema documenter",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "fire-doc": "./src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.3.1"
+  }
+}
