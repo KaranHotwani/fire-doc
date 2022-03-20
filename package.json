@@ -1,18 +1,31 @@
 {
-  "name": "fire-doc",
-  "version": "1.0.0",
+  "name": "@karanh15/fire-doc",
+  "version": "1.0.1",
   "description": "Firebase schema documenter",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "keywords": [
+    "firebase",
+    "documentation",
+    "firestore"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node src/index.ts",
     "build": "tsc -p ."
   },
   "bin": {
-    "fire-doc": "./src/index.js"
+    "fire-doc": "./dist/index.js"
   },
-  "author": "",
+  "author": "Karan Hotwani - https://www.linkedin.com/in/karan-hotwani-a9ba73167",
   "license": "MIT",
+  "engines": {
+    "node": ">=14.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaranHotwani/fire-doc.git"
+  },
+  "homepage": "https://github.com/KaranHotwani/fire-doc",
   "dependencies": {
     "@firebase/firestore-types": "^2.5.0",
     "@types/node": "^17.0.21",

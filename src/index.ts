@@ -91,7 +91,7 @@ figlet.text("FIRE DOC", {horizontalLayout:"full",verticalLayout:"fitted"},(err: 
                         await writeDoc(records);
                         console.log('\n');
                         console.timeEnd("TimeLapsed");
-                        spinner.success({ text: chalk.blue(`Documentation Successful!\n Find shema at ${__dirname}/firebase_schema.csv`), mark: chalk.yellow(':)') })
+                        spinner.success({ text: chalk.blue(`Documentation Successful!\n Find shema at ${process.cwd()}/firebase_schema.csv`), mark: chalk.yellow(':)') })
                     }
                 }
                 else {
@@ -119,7 +119,7 @@ figlet.text("FIRE DOC", {horizontalLayout:"full",verticalLayout:"fitted"},(err: 
 async function writeDoc(records: CsvRecord[]) {
 
     const csvWriter = createObjectCsvWriter({
-        path: `${__dirname}/firebase_schema.csv`,
+        path: `./firebase_schema.csv`,
         header: [
             { id: 'path', title: 'PATH' },
             { id: 'schema', title: 'SCHEMA' }

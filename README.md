@@ -1,8 +1,33 @@
-# FIRE DOC
-
+## FIRE DOC
 Fire-doc is a simple script written in Typescript that runs over your entire cloud firestore database
 and gives out the a csv file as an output containing a documentation of all the firestore documents in all
 the collections in your database. 
+
+## Getting Started
+
+## Prerequisites
+node.js v14+, npm
+
+## Installation
+npm install @karanh15/fire-doc
+
+## Available Options
+```
+Options:
+      --help         Show help                                         
+      --version      Show version number                               
+  -f, --file         firebase config file path(required)
+  -c, --collections  List of collections(Unavailable for now)        
+  -o, --output       Output format(Unavailable for now)
+ ```
+
+## Examples
+
+```
+fire-doc -f /home/uname/Desktop/src/testProj-firebase-adminsdk-ry873-98g90byb01.json 
+```
+
+## Description
 
 This tool is written to help with a problem that arises when using cloud firestore. As you might know 
 when you use firestore, there is no schema at all!! since it is a nosql database. But other nosql databases
@@ -22,21 +47,6 @@ Create a firebase project and Go to Project Settings > Service Accounts > Create
 serviceAccountKey.json. This file is required to give access to your database for documentation. The Output
 will be saved in local file system, in the directory from which script has run.
 
-## Available Options
-```
-Options:
-      --help         Show help                                         
-      --version      Show version number                               
-  -f, --file         firebase config file path(required)
-  -c, --collections  List of collections(Unavailable for now)        
-  -o, --output       Output format(Unavailable for now)
- ```
-
-## Examples
-
-```
-fire-doc -f /home/uname/Desktop/src/testProj-firebase-adminsdk-ry873-98g90byb01.json 
-```
 
 ## Upcoming features.
 - Documentation for selected collections.
@@ -44,6 +54,10 @@ fire-doc -f /home/uname/Desktop/src/testProj-firebase-adminsdk-ry873-98g90byb01.
 - Output in Json format.
 - Documentation for multiple documents inside each collection.
 - Documentation for nested objects.
+- Firebase emulator suite support.
 - Not a feature, but testing & profiling is pending too.
+
+## Authors
+- Karan Hotwani - https://www.linkedin.com/in/karan-hotwani-a9ba73167
 
 Cheers!
